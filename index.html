@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" placeholder="Enter your location" id="locationInp">
+            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="weather-Info" style="display: none;" aria-live="polite" role="region">
+            <div class="weather">
+                <img src="" alt="weather-icon" id="weather-Icon">
+
+                <div class="changeUnits">
+                    <h2 id="temperature">20 °C</h2>
+                    <button id="changeTempBtn" aria-label="Toggle temperature unit">To °F</button>
+                </div>
+                <p id="location">New York, USA</p>
+                <p id="description">Partly Cloudy</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p class="humidity">60%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+
+                <div class="detail">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p class="wind-Speed">10 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-msg" aria-live="polite" role="status">No weather data available</div>
+    </div> 
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
