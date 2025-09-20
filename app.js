@@ -3,7 +3,6 @@
 let locationInp = document.getElementById("locationInp");
 let searchBtn = document.getElementById("searchBtn");
 let weatherImg = document.querySelector(".weather img");
-console.log(weatherImg);
 
 let weatherInfo = document.querySelector(".weather-Info");
 let tempEl = document.getElementById("temperature");
